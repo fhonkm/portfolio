@@ -22,7 +22,7 @@ function Nav() {
           <Link to="/">
             <img
               src="/migsNavbarLogo.png"
-              alt="Migs Navbar Logo"
+              alt="Migs Navbar"
               className="h-20 w-20 duration-150 hover:scale-105 hover:cursor-pointer"
               title="Homepage"
             />
