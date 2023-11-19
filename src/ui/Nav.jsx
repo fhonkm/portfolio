@@ -21,7 +21,7 @@ function Nav() {
         <div>
           <Link to="/">
             <img
-              src="/public/migsNavbarLogo.png"
+              src="/migsNavbarLogo.png"
               alt="Migs Navbar Logo"
               className="h-20 w-20 duration-150 hover:scale-105 hover:cursor-pointer"
               title="Homepage"
