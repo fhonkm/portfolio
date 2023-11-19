@@ -21,5 +21,3 @@ $ npm run dev
 $ npm run build
 ```
 
-## Live Preview
-https://migs-folio.netlify.app/
