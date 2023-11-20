@@ -1,22 +1,15 @@
-import { useEffect, useState } from "react";
 import AboutSkill from "./AboutSkill";
 import Border from "../ui/Border";
 
+function calculateAge(birthdate) {
+  const today = new Date();
+  const birthday = new Date(birthdate);
+  const ageNow = today.getFullYear() - birthday.getFullYear();
+  return ageNow;
+}
+
 function About() {
-  const [age, setAge] = useState(null);
-
-  useEffect(() => {
-    const calculateAge = (birthdate) => {
-      const today = new Date();
-      const birthday = new Date(birthdate);
-      const ageNow = today.getFullYear() - birthday.getFullYear();
-
-      setAge(ageNow);
-    };
-
-    // YYYY-MM-DD
-    calculateAge("2002-11-01");
-  }, []);
+  const age = calculateAge("2002-11-01");
 
   return (
     <section id="aboutMe" className="my-12">
