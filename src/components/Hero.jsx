@@ -1,4 +1,4 @@
-import AboutSkillItem from "./SkillItem";
+import SkillItem from "./SkillItem";
 import Border from "../ui/Border";
 
 function Hero() {
@@ -26,9 +26,9 @@ function Hero() {
         </div>
 
         <div className="mx-auto mt-12 flex w-full max-w-md flex-row justify-between rounded-xl bg-gradient-to-r from-sky-500 to-sky-400 px-10 py-3 text-white shadow-2xl">
-          <AboutSkillItem src="/reactLogo.svg" skillName="React" />
-          <AboutSkillItem src="/reduxLogo.svg" skillName="Redux" />
-          <AboutSkillItem src="/javascriptLogo.svg" skillName="JavaScript" />
+          <SkillItem src="/reactLogo.svg" skillName="React" />
+          <SkillItem src="/reduxLogo.svg" skillName="Redux" />
+          <SkillItem src="/javascriptLogo.svg" skillName="JavaScript" />
         </div>
       </div>
       <Border />
