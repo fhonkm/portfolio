@@ -1,15 +1,14 @@
+/* eslint-disable no-unused-vars */
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+import Modal from "./Modal";
+import { FaXmark } from "react-icons/fa6";
 
 function Nav() {
-  const [modalClick, setModalClick] = useState("Contact me");
+  const [isOpenModal, setIsOpenModal] = useState(false);
 
   function handleClick() {
-    setModalClick("Discord copied! @fhonk_");
-    setTimeout(() => {
-      setModalClick("Contact me");
-    }, 2000);
+    setIsOpenModal((prev) => !prev);
   }
 
   return (
@@ -30,15 +29,17 @@ function Nav() {
         </div>
 
         <div>
-          <CopyToClipboard text={"fhonk_"}>
-            <button
-              onClick={() => handleClick()}
-              className="rounded-lg bg-sky-500 px-4 py-1 font-baiJum text-white shadow-lg duration-150 hover:scale-105"
-            >
-              {modalClick}
-            </button>
-          </CopyToClipboard>
+          <button
+            onClick={() => handleClick()}
+            className="rounded-lg bg-sky-500 px-4 py-1 font-baiJum text-white shadow-lg duration-150 hover:scale-105"
+          >
+            Contact me
+          </button>
         </div>
+
+        {isOpenModal && (
+          <Modal closeModal={setIsOpenModal} isOpen={isOpenModal} />
+        )}
       </nav>
     </section>
   );
