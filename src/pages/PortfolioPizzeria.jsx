@@ -43,7 +43,9 @@ function PortfolioPizzeria() {
               </div>
               <div>
                 <p className="text-slate-500">Technologies Used</p>
-                <p>Vite + React, Redux Toolkit, Redux Toolkit Query</p>
+                <p>
+                  Vite + React, React Router, Redux Toolkit, Redux Toolkit Query
+                </p>
               </div>
               <div>
                 <p className="text-slate-500">Source Code</p>
