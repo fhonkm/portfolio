@@ -31,7 +31,7 @@ function Modal({ closeModal, isOpen }) {
   }
 
   return createPortal(
-    <div className="fixed left-0 top-0 z-50 h-screen w-full font-baiJum text-white backdrop-blur-sm backdrop-filter transition-all duration-500">
+    <div className="fixed left-0 top-0 z-50 h-screen w-full text-white backdrop-blur-sm backdrop-filter transition-all duration-500">
       <div
         ref={ref}
         className="fixed left-1/2 top-1/2 w-72 -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-sky-900 p-8 shadow-lg transition-all duration-500"
@@ -61,7 +61,7 @@ function Modal({ closeModal, isOpen }) {
                   "Copied to clipboard",
                 )
               }
-              className="w-62 rounded-lg bg-sky-500 px-4 py-1 font-baiJum text-white shadow-lg duration-100 hover:scale-[103%]"
+              className="w-62 rounded-lg bg-sky-500 px-4 py-1 text-white shadow-lg duration-100 hover:scale-[103%]"
             >
               <div className="flex items-center gap-2">
                 <FaDiscord className="text-3xl" />
@@ -79,7 +79,7 @@ function Modal({ closeModal, isOpen }) {
                   "Copied to clipboard",
                 )
               }
-              className="w-62 rounded-lg bg-sky-500 px-4 py-1 font-baiJum text-white shadow-lg duration-100 hover:scale-[103%]"
+              className="w-62 rounded-lg bg-sky-500 px-4 py-1 text-white shadow-lg duration-100 hover:scale-[103%]"
             >
               <div className="flex items-center gap-2">
                 <MdOutlineEmail className="text-3xl" />

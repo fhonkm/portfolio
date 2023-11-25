@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Modal from "./Modal";
-import { FaXmark } from "react-icons/fa6";
+import Button from "./Button";
 
 function Nav() {
   const [isOpenModal, setIsOpenModal] = useState(false);
@@ -29,12 +29,7 @@ function Nav() {
         </div>
 
         <div>
-          <button
-            onClick={() => handleClick()}
-            className="rounded-lg bg-sky-500 px-4 py-1 font-baiJum text-white shadow-lg duration-150 hover:scale-105"
-          >
-            Contact me
-          </button>
+          <Button onClick={handleClick}>Contact me</Button>
         </div>
 
         {isOpenModal && (
