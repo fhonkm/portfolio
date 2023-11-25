@@ -1,9 +1,11 @@
 import { FaGithub } from "react-icons/fa6";
+import Border from "./Border";
 
 function Footer() {
   return (
     <section id="footer">
-      <div className="mx-auto my-6 flex max-w-6xl items-center justify-between px-6 font-baiJum">
+      <Border />
+      <div className="mx-auto my-6 flex max-w-6xl items-center justify-between px-6">
         <div className="md:text-md text-sm">
           <p>fhonkM © 2023</p>
           <p>
