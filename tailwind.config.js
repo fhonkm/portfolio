@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        baiJum: "Bai Jamjuree",
+        sans: "Bai Jamjuree",
       },
     },
   },

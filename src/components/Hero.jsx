@@ -4,7 +4,7 @@ import Border from "../ui/Border";
 function Hero() {
   return (
     <section id="hero">
-      <div className="mx-auto mt-6 flex max-w-6xl flex-col items-center justify-between px-6 font-baiJum">
+      <div className="mx-auto mt-6 flex max-w-6xl flex-col items-center justify-between px-6">
         <div className="rounded-full bg-sky-500 p-4 duration-150 hover:scale-105">
           <img
             src="/migsLogo.png"
