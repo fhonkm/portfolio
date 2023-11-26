@@ -7,9 +7,9 @@ import { FaGithub } from "react-icons/fa6";
 
 function PortfolioPizzeria() {
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-    });
+    document.title = "fhonk_ | Pizzeria";
+
+    return () => (document.title = "fhonk_ | Homepage");
   }, []);
 
   return (

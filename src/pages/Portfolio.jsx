@@ -5,9 +5,9 @@ import ImageCard from "../ui/ImageCard";
 
 function Portfolio() {
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-    });
+    document.title = "fhonk_ | Portfolio";
+
+    return () => (document.title = "fhonk_ | Homepage");
   }, []);
 
   return (
