@@ -9,8 +9,6 @@ My personal showcase portfolio.
 - [React Router](https://reactrouter.com/en/main)
 - [Tailwind CSS](https://tailwindcss.com/)
 
-## Getting Started
-
 ## Live
 
 https://migs-folio.netlify.app/
