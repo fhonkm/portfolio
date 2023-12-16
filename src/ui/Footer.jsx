@@ -12,10 +12,6 @@ function Footer() {
             This website is built using
             <span className="text-sky-500"> Vite + React.</span>
           </p>
-          <p className="text-xs">
-            Disclaimer: Only a portfolio showcase; not accepting commissions at
-            this moment.
-          </p>
         </div>
 
         <div>

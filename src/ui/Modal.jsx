@@ -1,15 +1,20 @@
+/* eslint-disable no-unused-vars */
 import { useState, useRef, useEffect } from "react";
 import { createPortal } from "react-dom";
-import { FaDiscord } from "react-icons/fa";
+import { FaDiscord, FaGithub } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 import CopyToClipboard from "react-copy-to-clipboard";
 
 function Modal({ closeModal, isOpen }) {
-  const [contactDiscordClick, setContactDiscordClick] = useState("fhonk_");
-  const [contactEmailClick, setContactEmailClick] =
-    useState("fhonkm@gmail.com");
+  const [contactClicks, setContactClicks] = useState({});
   const ref = useRef();
+
+  const socials = [
+    { user: "miggyyboi", id: "github" },
+    { user: "fhonkm@gmail.com", id: "email" },
+    { user: "fhonk_", id: "discord" },
+  ];
 
   useEffect(() => {
     function handleClickOutside(e) {
@@ -23,10 +28,17 @@ function Modal({ closeModal, isOpen }) {
     };
   });
 
-  function handleContactClick(setStateFunction, initialValue, newValue) {
-    setStateFunction(newValue);
+  function handleContactClick(socialId) {
+    setContactClicks((prev) => ({
+      ...prev,
+      [socialId]: "Copied to clipboard",
+    }));
+
     setTimeout(() => {
-      setStateFunction(initialValue);
+      setContactClicks((prev) => ({
+        ...prev,
+        [socialId]: "",
+      }));
     }, 1500);
   }
 
@@ -52,41 +64,31 @@ function Modal({ closeModal, isOpen }) {
             </button>
           </header>
 
-          <CopyToClipboard text={"fhonk_"}>
-            <button
-              onClick={() =>
-                handleContactClick(
-                  setContactDiscordClick,
-                  "fhonk_",
-                  "Copied to clipboard",
-                )
-              }
-              className="w-62 rounded-lg bg-sky-500 px-4 py-1 text-white shadow-lg duration-100 hover:scale-[103%]"
-            >
-              <div className="flex items-center gap-2">
-                <FaDiscord className="text-3xl" />
-                {contactDiscordClick}
-              </div>
-            </button>
-          </CopyToClipboard>
-
-          <CopyToClipboard text={"fhonkm@gmail.com"}>
-            <button
-              onClick={() =>
-                handleContactClick(
-                  setContactEmailClick,
-                  "fhonkm@gmail.com",
-                  "Copied to clipboard",
-                )
-              }
-              className="w-62 rounded-lg bg-sky-500 px-4 py-1 text-white shadow-lg duration-100 hover:scale-[103%]"
-            >
-              <div className="flex items-center gap-2">
-                <MdOutlineEmail className="text-3xl" />
-                {contactEmailClick}
-              </div>
-            </button>
-          </CopyToClipboard>
+          {socials.map((social) => (
+            <div key={social.id}>
+              <CopyToClipboard
+                text={social.user}
+                onCopy={() => handleContactClick(social.id)}
+              >
+                <button className="w-62 w-full rounded-lg bg-sky-500 px-4 py-1 text-white shadow-lg duration-100 hover:scale-[103%]">
+                  <div className="flex items-center gap-2">
+                    {social.id === "discord" && (
+                      <FaDiscord className="text-3xl" />
+                    )}
+                    {social.id === "email" && (
+                      <MdOutlineEmail className="text-3xl" />
+                    )}
+                    {social.id === "github" && (
+                      <FaGithub className="text-3xl" />
+                    )}
+                    {contactClicks[social.id] === "Copied to clipboard"
+                      ? "Copied to clipboard"
+                      : social.user}
+                  </div>
+                </button>
+              </CopyToClipboard>
+            </div>
+          ))}
         </section>
       </div>
     </div>,
