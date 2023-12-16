@@ -11,17 +11,6 @@ My personal showcase portfolio.
 
 ## Getting Started
 
-```bash
-# install dependencies
-$ npm install
-
-# run at your localhost
-$ npm run dev
-
-# build for production
-$ npm run build
-```
-
 ## Live
 
 https://migs-folio.netlify.app/
