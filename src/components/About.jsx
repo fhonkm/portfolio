@@ -1,15 +1,15 @@
 import AboutSkill from "./AboutSkill";
 import Border from "../ui/Border";
 
-function calculateAge(birthdate) {
-  const today = new Date();
-  const birthday = new Date(birthdate);
-  const ageNow = today.getFullYear() - birthday.getFullYear();
-  return ageNow;
-}
+// function calculateAge(birthdate) {
+//   const today = new Date();
+//   const birthday = new Date(birthdate);
+//   const ageNow = today.getFullYear() - birthday.getFullYear();
+//   return ageNow;
+// }
 
 function About() {
-  const age = calculateAge("2002-11-01");
+  // const age = calculateAge("2002-11-01");
 
   return (
     <section id="aboutMe" className="my-12">
@@ -22,8 +22,7 @@ function About() {
         <div className="mt-10 flex w-full items-center justify-center px-4 pb-6 lg:w-1/2">
           <div className="space-y-4 rounded-xl bg-sky-500 p-6 text-white shadow-xl">
             <div>
-              Hey, I am Migs! And I am a {age !== null && age} year old 🙎‍♂️
-              aspiring developer.
+              Hey, I am Migs! An aspiring developer.
             </div>
             <div>
               I started off as every programmer - a gamer 🤓 - which then piqued
