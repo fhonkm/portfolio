@@ -10,7 +10,7 @@ function Footer() {
           <p>fhonkM © 2023</p>
           <p>
             This website is built using
-            <span className="text-sky-500"> Vite + React.</span>
+            <span className="text-sky-500"><a href="https://vitejs.dev/guide/">Vite + React.</a></span>
           </p>
         </div>
 
