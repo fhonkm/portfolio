@@ -22,7 +22,7 @@ function About() {
         <div className="mt-10 flex w-full items-center justify-center px-4 pb-6 lg:w-1/2">
           <div className="space-y-4 rounded-xl bg-sky-500 p-6 text-white shadow-xl">
             <div>
-              Hey, I am Migs! An aspiring programmer.
+              Hey, I am Migs! An aspiring programmer and a Cybersecurity student!
             </div>
             <div>
               I started off as every programmer - a gamer 🤓 - which then piqued
