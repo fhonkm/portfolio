@@ -5,10 +5,10 @@ import Modal from "./Modal";
 import Button from "./Button";
 
 function Nav() {
-  const [isOpenModal, setIsOpenModal] = useState(false);
+  const [isModal, setIsModal] = useState(false);
 
   function handleClick() {
-    setIsOpenModal((prev) => !prev);
+    setIsModal((prev) => !prev);
   }
 
   return (
@@ -32,8 +32,8 @@ function Nav() {
           <Button onClick={handleClick}>Contact me</Button>
         </div>
 
-        {isOpenModal && (
-          <Modal closeModal={setIsOpenModal} isOpen={isOpenModal} />
+        {isModal && (
+          <Modal closeModal={setIsModal} isOpen={isModal} />
         )}
       </nav>
     </section>
