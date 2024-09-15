@@ -2,8 +2,8 @@
 import { useState, useRef, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { FaDiscord, FaGithub } from "react-icons/fa";
-import { FaXmark } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
+import { FaXmark } from "react-icons/fa6";
 import CopyToClipboard from "react-copy-to-clipboard";
 
 function Modal({ closeModal, isOpen }) {
@@ -11,7 +11,7 @@ function Modal({ closeModal, isOpen }) {
   const ref = useRef();
 
   const socials = [
-    { user: "miggyyboi", id: "github" },
+    { user: "fhonkm", id: "github" },
     { user: "fhonkm@gmail.com", id: "email" },
     { user: "fhonk_", id: "discord" },
   ];

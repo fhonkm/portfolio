@@ -60,18 +60,6 @@ function PortfolioPizzeria() {
                 </Button>
               </div>
             </div>
-            {/* <div className="space-y-10">
-              <p>
-                A concept pizza store to reinforce my Redux Toolkit and Redux
-                Toolkit Query knowledge. It includes
-                <span className="font-semibold italic">
-                  &nbsp;cart and geolocation (get your address)&nbsp;
-                </span>
-                functionality.
-              </p>
-              <p>Vite + React, Redux Toolkit, Redux Toolkit Query</p>
-              <p>https://github.com/miggyyboi/Pizzeria-Store</p>
-            </div> */}
           </div>
         </section>
 

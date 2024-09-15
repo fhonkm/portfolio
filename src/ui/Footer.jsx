@@ -10,7 +10,11 @@ function Footer() {
           <p>fhonkM © 2023</p>
           <p>
             This website is built using
-            <span className="text-sky-500 hover:text-sky-600 hover:scale-105"><a href="https://vitejs.dev/guide/"> Vite + React.</a></span>
+            <span className="text-sky-500 hover:scale-105 hover:text-sky-600">
+              <a rel="noreferrer" href="https://vitejs.dev/guide/">
+                Vite + React.
+              </a>
+            </span>
           </p>
         </div>
 
