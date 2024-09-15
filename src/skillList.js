@@ -39,4 +39,8 @@ export const skillList = [
     skill: "Python",
     image: "/pythonLogo.svg",
   },
+  {
+    skill: "C#",
+    image: "/csLogo.svg"
+  }
 ];
