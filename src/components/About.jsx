@@ -23,21 +23,21 @@ function About() {
         <div className="mt-10 flex w-full items-center justify-center px-4 pb-6 lg:w-1/2">
           <div className="space-y-4 rounded-xl bg-sky-500 p-6 text-white shadow-xl">
             <div>
-              Hey, I am Migs! An aspiring develope and I am {age} years old.
+              Hey, I am Migs! An aspiring developer.
             </div>
             <div>
               I started off as every programmer - a gamer 🤓 - which then piqued
               my interest in everything computer related. I picked up Java as my
-              first programming language, but then discovered delight in website
-              development. Here I am now, building websites! 💻
+              first programming language. Here I am now, exploring the vast landscape
+              of the programming world! 💻
             </div>
             <div className="flex flex-row items-center">
               Currently learning:
               <img
-                src="/typescriptLogo.svg"
-                alt="TypeScript Logo"
+                src="/pythonLogo.svg"
+                alt="Python Logo"
                 className="ml-2 h-6 w-6"
-                title="TypeScript"
+                title="Python"
               />
             </div>
           </div>

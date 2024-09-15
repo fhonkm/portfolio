@@ -18,8 +18,8 @@ function Hero() {
             hey, I am <span className="text-7xl text-sky-900">migs</span> 👋
           </h2>
           <p className="leading-8s max-w-md px-6 text-center text-gray-500 md:max-w-lg">
-            I am thrilled to have you here! I am an enthusiastic web developer
-            with a passion for front-end development. I always seek to upskill
+            I am thrilled to have you here! I am an enthusiastic programmer
+            with a passion for everything programming related. I always seek to upskill
             myself, ensuring that I not only keep pace with advancing
             technologies but also continuously hone my craft!
           </p>
