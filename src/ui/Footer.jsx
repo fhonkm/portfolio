@@ -20,7 +20,7 @@ function Footer() {
 
         <div>
           <a
-            href="https://github.com/miggyyboi"
+            href="https://github.com/fhonkm"
             target="_blank"
             rel="noreferrer"
             title="Go to my github"
