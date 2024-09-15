@@ -10,6 +10,7 @@ function calculateAge(birthdate) {
 
 function About() {
   // calculateAge parameter  = "yyyy-mm-dd" i.e. 2002-11-01
+  // eslint-disable-next-line no-unused-vars
   const age = calculateAge("2002-11-01");
 
   return (
