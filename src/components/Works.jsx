@@ -13,7 +13,7 @@ function Works() {
             altName="Pizzeria Image"
             workLink="/portfolio/pizzeria"
           />
-        
+
           <ImageCard
             src="/placeholder.svg"
             altName="Soon Image"
