@@ -32,15 +32,6 @@ function About() {
               first programming language. Here I am now, exploring the vast landscape
               of the programming world! 💻
             </div>
-            <div className="flex flex-row items-center">
-              Currently learning:
-              <img
-                src="/pythonLogo.svg"
-                alt="Python Logo"
-                className="ml-2 h-6 w-6"
-                title="Python"
-              />
-            </div>
           </div>
         </div>
       </div>
